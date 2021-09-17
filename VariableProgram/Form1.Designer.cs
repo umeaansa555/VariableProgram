@@ -38,6 +38,9 @@ namespace VariableProgram
             // 
             // hockeyButton
             // 
+            this.hockeyButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.hockeyButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.hockeyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hockeyButton.ForeColor = System.Drawing.Color.Red;
             this.hockeyButton.Location = new System.Drawing.Point(48, 333);
@@ -50,6 +53,9 @@ namespace VariableProgram
             // 
             // areaButton
             // 
+            this.areaButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.areaButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.areaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.areaButton.ForeColor = System.Drawing.Color.Red;
             this.areaButton.Location = new System.Drawing.Point(196, 333);
@@ -62,6 +68,9 @@ namespace VariableProgram
             // 
             // carpetButton
             // 
+            this.carpetButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.carpetButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.carpetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.carpetButton.ForeColor = System.Drawing.Color.Red;
             this.carpetButton.Location = new System.Drawing.Point(345, 333);
@@ -74,12 +83,16 @@ namespace VariableProgram
             // 
             // textDisplayLabel
             // 
+            this.textDisplayLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textDisplayLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.textDisplayLabel.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDisplayLabel.ForeColor = System.Drawing.Color.Red;
+            this.textDisplayLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textDisplayLabel.Location = new System.Drawing.Point(21, 22);
             this.textDisplayLabel.Name = "textDisplayLabel";
-            this.textDisplayLabel.Padding = new System.Windows.Forms.Padding(5, 5, 5, 0);
+            this.textDisplayLabel.Padding = new System.Windows.Forms.Padding(15);
             this.textDisplayLabel.Size = new System.Drawing.Size(634, 263);
             this.textDisplayLabel.TabIndex = 3;
             this.textDisplayLabel.Text = "Press a button.";
@@ -87,6 +100,9 @@ namespace VariableProgram
             // 
             // receiptButton
             // 
+            this.receiptButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.receiptButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.receiptButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.receiptButton.ForeColor = System.Drawing.Color.Red;
             this.receiptButton.Location = new System.Drawing.Point(494, 333);
@@ -111,6 +127,7 @@ namespace VariableProgram
             this.ForeColor = System.Drawing.Color.Gold;
             this.Name = "Form1";
             this.Text = "Variable Program";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }

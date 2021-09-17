@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace VariableProgram
@@ -51,8 +44,21 @@ namespace VariableProgram
         private void receiptButton_Click(object sender, EventArgs e)
         {
             double shirtPrice = 12.49;
-            double tax = 0.13;
-            double total = shirtPrice * tax;
+            double tax = 0.13 * shirtPrice;
+            double totalPrice = shirtPrice + tax;
+            double cashPaid = 20.00;
+            double change = cashPaid - totalPrice;
+            textDisplayLabel.Text = $"Bill of Sale" +
+                $"\n\nShirt:  {shirtPrice}" +
+                $"\nTax:    {tax}" +
+                $"\nTotal:    {totalPrice}";
+            textDisplayLabel.Text += $"\n\nTendered: {cashPaid}" +
+                $"\nChange: {change}";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
