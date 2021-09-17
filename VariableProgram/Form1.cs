@@ -10,11 +10,6 @@ namespace VariableProgram
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void hockeyButton_Click(object sender, EventArgs e)
         {
             string playerName = "Wayne Gretzky";
@@ -38,7 +33,7 @@ namespace VariableProgram
             double area = length * width;
             double totalCost = area * costPerMeter;
             textDisplayLabel.Text = $"The area of a room with dimensions 8.5m x 6m is {area}m^2.";
-            textDisplayLabel.Text += $"\n\nThe cost to carpet this area at 19.95 per square metre is {totalCost}.";
+            textDisplayLabel.Text += $"\n\nThe cost to carpet this area at 19.95 per square metre is ${totalCost}.";
         }
 
         private void receiptButton_Click(object sender, EventArgs e)
@@ -49,16 +44,11 @@ namespace VariableProgram
             double cashPaid = 20.00;
             double change = cashPaid - totalPrice;
             textDisplayLabel.Text = $"Bill of Sale" +
-                $"\n\nShirt:  {shirtPrice}" +
-                $"\nTax:    {tax}" +
-                $"\nTotal:    {totalPrice}";
-            textDisplayLabel.Text += $"\n\nTendered: {cashPaid}" +
-                $"\nChange: {change}";
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+                $"\n\nShirt:        {shirtPrice}" +
+                $"\nTax:        {tax}" +
+                $"\nTotal:      {totalPrice}";
+            textDisplayLabel.Text += $"\n\nTendered:        {cashPaid}" +
+                $"\nChange:     {change}";
         }
     }
 }

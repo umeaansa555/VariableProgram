@@ -29,6 +29,7 @@ namespace VariableProgram
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.hockeyButton = new System.Windows.Forms.Button();
             this.areaButton = new System.Windows.Forms.Button();
             this.carpetButton = new System.Windows.Forms.Button();
@@ -38,8 +39,7 @@ namespace VariableProgram
             // 
             // hockeyButton
             // 
-            this.hockeyButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.hockeyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.hockeyButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.hockeyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hockeyButton.ForeColor = System.Drawing.Color.Red;
@@ -53,8 +53,7 @@ namespace VariableProgram
             // 
             // areaButton
             // 
-            this.areaButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.areaButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.areaButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.areaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.areaButton.ForeColor = System.Drawing.Color.Red;
@@ -68,8 +67,7 @@ namespace VariableProgram
             // 
             // carpetButton
             // 
-            this.carpetButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.carpetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.carpetButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.carpetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.carpetButton.ForeColor = System.Drawing.Color.Red;
@@ -93,15 +91,13 @@ namespace VariableProgram
             this.textDisplayLabel.Location = new System.Drawing.Point(21, 22);
             this.textDisplayLabel.Name = "textDisplayLabel";
             this.textDisplayLabel.Padding = new System.Windows.Forms.Padding(15);
-            this.textDisplayLabel.Size = new System.Drawing.Size(634, 263);
+            this.textDisplayLabel.Size = new System.Drawing.Size(625, 263);
             this.textDisplayLabel.TabIndex = 3;
             this.textDisplayLabel.Text = "Press a button.";
-            this.textDisplayLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // receiptButton
             // 
-            this.receiptButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.receiptButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.receiptButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.receiptButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.receiptButton.ForeColor = System.Drawing.Color.Red;
@@ -118,16 +114,16 @@ namespace VariableProgram
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(691, 414);
+            this.ClientSize = new System.Drawing.Size(682, 414);
             this.Controls.Add(this.receiptButton);
             this.Controls.Add(this.textDisplayLabel);
             this.Controls.Add(this.carpetButton);
             this.Controls.Add(this.areaButton);
             this.Controls.Add(this.hockeyButton);
             this.ForeColor = System.Drawing.Color.Gold;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Variable Program";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "4 Trick Program";
             this.ResumeLayout(false);
 
         }
